@@ -1,0 +1,13 @@
+---
+title: "India TB Pathways Analysis"
+format: html
+author: "YOUR NAME HERE"
+---
+
+
+```{python}
+import pandas as pd
+
+india = pd.read_csv("../data/india_tb_pathways_and_costs.csv")
+india
+```
