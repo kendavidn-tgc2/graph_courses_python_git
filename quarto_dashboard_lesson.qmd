@@ -1,0 +1,98 @@
+---
+title: "Gapminder 2007"
+format: dashboard
+---
+
+```{python}
+import plotly.express as px
+
+p = px.line(y=[1, 2, 3])
+```
+
+# Layouts
+
+## Row {height="30%"}
+
+### Column {width="20%"}
+
+```{python}
+p
+```
+
+### Column {width="80%"}
+
+```{python}
+p
+```
+
+## Row {height="70%"}
+
+```{python}
+p
+```
+
+# Tabsets
+
+## Row {height="30%"}
+
+### Column {.tabset width="20%"}
+
+#### Tab 1
+
+```{python}
+p
+```
+
+#### Tab 2
+
+Hello World
+
+### Column {width="80%"}
+
+```{python}
+p
+```
+
+## Row {.tabset height="70%"}
+
+### Tab 1
+
+```{python}
+p
+```
+
+### Tab 2
+
+Hello World
+
+# Value Boxes
+
+```{python}
+tips = px.data.tips()
+num_cols = tips.shape[1]
+num_rows = tips.shape[0]
+```
+
+## {height="20%"}
+
+::: {.valuebox title="Columns" color="primary" icon="heart"}
+`{python} num_cols`
+
+Few columns
+:::
+
+::: {.valuebox title="Rows" color="secondary" icon="arrow-down"}
+`{python} num_rows`
+
+Many rows
+:::
+
+::: {.valuebox title="Medium Number" color="#5ba3b6" icon="bar-chart"}
+1
+:::
+
+##
+
+```{python}
+p
+```
